@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=”css/bootstrap.css”><link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+</head>
+<body>
+   <script src="index.js"></script>
+    <nav>
+        <a style="color:white; font-size: 40px; float: left;">Notes</a><br><br>
+        <a style="margin-left: 800px;">Home</a>
+        <a>About Us</a>
+        <a>Collections</a>
+        <a style="background-color: white; border-radius:30px;">Login</a>
+    </nav>
+    
+    <div id="div1">
+        <div id="left" style="float:left; background-color: black; color: white; width: 300px; height: 540px; ">
+            <br><br>
+            <h1>More Functions</h1><p>Add your notes for more functions!!!</p><br><br>
+            <button id="search"  onclick="search()">Search</button>
+            <input id="input"  style="border-radius:10px ; width: 20vh; visibility: hidden;"  type="text">
+            <br><br><button id="goall"  onclick="deleteAll()">Delete All</button>
+            <button id="gosome" style="margin-left: 10px; width: 120px; height: 35px; visibility: hidden;" onclick="deleteSome()">Delete Selected</button>
+            <br><br><button id="showall" onclick="showall()">Show All</button>
+            <br><br><button id="arch"  onclick="myArch()">Your Archives</button>
+            <br><br><button id="backup"  onclick="backup()">Backup</button>
+        </div>
+
+        <div >
+        <img src="notes2.jpg">
+        <br><br><br><br><br>
+        <h1 style="color: white; margin-left:450px;">My Notes</h1>
+        <br>
+        <input style="margin-left:140px;" type="text" id="title" placeholder="My Title"><br><br>
+        <textarea style="margin-left:140px;" type="" id="notes" placeholder="My Notes"></textarea><br><br>
+        <button style="margin-left:140px; " onclick="store()" id="Addbutton">Add a note</button>
+        <button onclick="savechanges()" id="save" style="visibility: visible; background-color: blue; color: black; margin-left: 70px; width: 260px;">Save Changes</button>
+        <h4 id="demo" style="visibility: hidden;">Your note has been saved</h4>
+        
+        </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; padding: 20px; margin: 0px; width: 100%;" id="aisehi" >
+       
+    </div>
+    <h1 style="color: black; margin-left: 150px; margin-top: 0px;">Your Notes</h1><br>
+    <p id="default1" style="font-size:20px ; margin-left: 155px; line-height: 0;">You have no notes yet!!!!!!</p>
+    <br>
+    <div id="adding" style="display: flex; flex-wrap: wrap; padding: 20px; margin: 0px; width: 100%;  " onclick="handleClick(this,event)">
+       
+    </div>
+
+    <h1 style="color: black; margin-left: 150px; ">Your Archieves</h1>
+    <p id="default2" style="font-size:20px ; margin-left: 155px; line-height: 1;">You have no archieves yet!!!!!!</p>
+  <br>  <div style="display: flex; flex-wrap: wrap; padding: 20px; margin: 0px; width: 100%;  " id="addarch"></div>
+
+</body>
+</html>
